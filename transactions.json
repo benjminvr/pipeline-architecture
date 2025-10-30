@@ -1,27 +1,6 @@
 [
   {
-    "timestamp": "2025-10-30T16:01:12.535563",
-    "transaction": {
-      "user_id": "u123",
-      "btc_amount": 0.01,
-      "base_currency": "EUR"
-    },
-    "user": {
-      "name": "Alice",
-      "kyc_level": "basic"
-    },
-    "fiat_amount": 625.6,
-    "fee": 4.6,
-    "total": 630.2,
-    "fx_used": {
-      "btc_usd": 68000.0,
-      "usd_to_eur": 0.92,
-      "usd_to_gbp": 0.78,
-      "applied": 0.92
-    }
-  },
-  {
-    "timestamp": "2025-10-30T16:01:12.535924",
+    "timestamp": "2025-10-30T16:50:42.876822",
     "transaction": {
       "user_id": "u456",
       "btc_amount": 0.015,
@@ -42,7 +21,7 @@
     }
   },
   {
-    "timestamp": "2025-10-30T16:01:12.536324",
+    "timestamp": "2025-10-30T16:50:42.877191",
     "transaction": {
       "user_id": "u123",
       "btc_amount": 0.02,

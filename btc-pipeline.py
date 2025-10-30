@@ -175,7 +175,10 @@ if __name__ == "__main__":
         Transaction(user_id="u123", btc_amount=0.02, base_currency="GBP"),
     ]
     for tx in examples:
-        res = pipeline.run({"transaction": tx})
-        printable = {k: (asdict(v) if k=="transaction" else v)
-                     for k, v in res.items() if k != "user"}
-        print("[Result]", json.dumps(printable, indent=2, ensure_ascii=False))
+        try:
+            res = pipeline.run({"transaction": tx})
+            printable = {k: (asdict(v) if k=="transaction" else v)
+                        for k, v in res.items() if k != "user"}
+            print("[Result]", json.dumps(printable, indent=2, ensure_ascii=False))
+        except:
+            print("[Result] ERROR")
